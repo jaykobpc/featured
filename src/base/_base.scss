@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.no-select {
+    user-select: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}

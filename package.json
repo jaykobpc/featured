@@ -1,0 +1,17 @@
+{
+  "name": "alexmulei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass src/main.scss css/app.build.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
+  }
+}
