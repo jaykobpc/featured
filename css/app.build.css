@@ -90,19 +90,24 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 .landingview__textview {
   text-align: center; }
   .landingview__textview--header {
     display: block;
-    font-size: 5.5rem;
+    font-size: 5.7rem;
     font-weight: 400;
     font-family: inherit;
     color: #E0E0E0;
     text-transform: uppercase;
-    letter-spacing: 2.8555rem;
+    letter-spacing: 2.5555rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .landingview__textview--header {
+        font-size: 3.3rem;
+        letter-spacing: 1.2222rem; } }
   .landingview__textview--smview {
     display: block;
     font-size: 1.5rem;
@@ -111,3 +116,47 @@ body {
     color: #E0E0E0;
     text-transform: uppercase;
     letter-spacing: .8555rem; }
+    @media only screen and (max-width: 56.25em) {
+      .landingview__textview--smview {
+        font-size: 1.3rem;
+        letter-spacing: .5555rem; } }
+
+.landingview__widgets {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: center; }
+  .landingview__widgets--tab {
+    margin: 1.5rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    transition: all .3s; }
+    @media only screen and (max-width: 56.25em) {
+      .landingview__widgets--tab {
+        margin: 1.2rem; } }
+  .landingview__widgets--link {
+    text-decoration: none;
+    fill: #E0E0E0;
+    transition: all .3s; }
+
+svg {
+  width: 3.2rem;
+  height: 3.2rem; }
+
+.fill-blue:hover {
+  fill: #55acee; }
+
+.fill-mix:hover {
+  fill: #E91E63; }
+
+.fill-facebook:hover {
+  fill: #3b5999; }
+
+.fill-reddit:hover {
+  fill: #ef5350; }
+
+.fill-website:hover {
+  fill: #9C27B0; }
+
+[v-cloak] {
+  display: none; }

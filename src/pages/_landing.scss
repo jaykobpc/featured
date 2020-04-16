@@ -24,6 +24,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
+        width: 100%;
     }
 
     &__textview {
@@ -31,13 +32,18 @@
 
         &--header {
             display: block;
-            font-size: 5.5rem;
+            font-size: 5.7rem;
             font-weight: 400;
             font-family: inherit;
             color: $color-grey-300;
             text-transform: uppercase;
-            letter-spacing: 2.8555rem;
+            letter-spacing: 2.5555rem;
             margin-bottom: 1.5rem;
+
+            @include respond(tab-port) {
+                font-size: 3.3rem;
+                letter-spacing: 1.2222rem;
+            }
         }
 
         &--smview {
@@ -48,6 +54,74 @@
             color: $color-grey-300;
             text-transform: uppercase;
             letter-spacing: .8555rem;
+
+            @include respond(tab-port) {
+                font-size: 1.3rem;
+                letter-spacing: .5555rem;
+            }
         }
     }
+
+    &__widgets {
+        display: flex;
+        align-items: center;
+        margin-top: 2.5rem;
+        justify-content: center;
+
+        &--tab {
+            margin: 1.5rem;
+            padding: .8rem;
+            border-radius: .5rem;
+            transition: all .3s;
+
+            @include respond(tab-port) {
+                margin: 1.2rem;
+            }
+        }
+
+        &--link {
+            text-decoration: none;
+            fill: $color-grey-300;
+            transition: all .3s;
+        }
+    }
+}
+
+svg {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.fill-blue {
+    &:hover {
+        fill: $color-twitter;
+    }
+}
+
+.fill-mix {
+    &:hover {
+        fill: $color-pink-500;
+    }
+}
+
+.fill-facebook {
+    &:hover {
+        fill: $color-facebook;
+    }
+}
+
+.fill-reddit {
+    &:hover {
+        fill: $color-red-400;
+    }
+}
+
+.fill-website {
+    &:hover {
+        fill: $color-purple-500;
+    }
+}
+
+[v-cloak] {
+    display: none;
 }
