@@ -133,7 +133,7 @@ body {
     transition: all .3s; }
     @media only screen and (max-width: 56.25em) {
       .landingview__widgets--tab {
-        margin: 1.2rem; } }
+        margin: .5rem; } }
   .landingview__widgets--link {
     text-decoration: none;
     fill: #E0E0E0;
@@ -142,6 +142,10 @@ body {
 svg {
   width: 3.2rem;
   height: 3.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    svg {
+      width: 2.5rem;
+      height: 2.5rem; } }
 
 .fill-blue:hover {
   fill: #55acee; }
