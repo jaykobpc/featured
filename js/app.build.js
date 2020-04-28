@@ -2,15 +2,15 @@ var app = new Vue({
     el: '#root',
     data: {
         'id': 1,
-        'profile': 'alex mulei',
-        'username': 'alex',
+        'profile': 'Jacob watenga',
+        'username': 'jacob',
         'subdata': 'the book master',
-        'twitter': 'https://twitter.com/',
-        'instagram': 'https://instagram.com/',
+        'twitter': 'https://twitter.com/jaykob_w',
+        'instagram': 'https://instagram.com/jaykob_w',
         'facebook': 'https://facebook.com/',
         'reddit': 'https://reddit.com/',
         'website': 'https://codist.000webhostapp.com/',
-        user: 'alexmulei',
+        user: 'jaykobpc',
     },
     mounted() {
         this.add_metrics()
