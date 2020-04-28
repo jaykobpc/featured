@@ -4,7 +4,7 @@ var app = new Vue({
         'id': 1,
         'profile': 'Jacob watenga',
         'username': 'jacob',
-        'subdata': 'the book master',
+        'subdata': 'the code life',
         'twitter': 'https://twitter.com/jaykob_w',
         'instagram': 'https://instagram.com/jaykob_w',
         'facebook': 'https://facebook.com/',
